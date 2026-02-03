@@ -175,6 +175,7 @@ Développer une application web permettant à un utilisateur de gérer sa garde-
 
 ---
 
+
 ## **🌐 Site public**
 
 - Page d’accueil (connexion / présentation)
