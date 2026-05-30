@@ -1,196 +1,338 @@
-# **Application de gestion de garde-robe**
+# My Closet – Cahier des charges
+
+> **Projet de fin d'études (PFE)**
+Stack : Laravel · Livewire · Tailwind CSS · MySQL
+>
 
 ---
 
-## **📌 Contexte et problématique**
+## Table des matières
 
-Pour beaucoup de personnes, il n’est pas toujours facile de trouver rapidement une tenue adaptée pour un événement ou une sortie. Certaines possèdent beaucoup de vêtements et oublient parfois ce qu’elles ont déjà, ce qui entraîne des achats inutiles.
-
-L’objectif de ce projet est donc de développer une application web permettant à l’utilisateur de :
-
-- Visualiser l’ensemble de sa garde-robe
-- Rester organisé
-- Créer et gérer facilement des tenues
-- Recevoir des suggestions et alertes pour optimiser l’usage de ses vêtements
-
----
-
-## **🎯 Objectifs du projet**
-
-### **Objectif général**
-
-Développer une application web permettant à un utilisateur de gérer sa garde-robe personnelle, de créer des tenues, de rechercher des looks adaptés et d’obtenir des suggestions pour ses vêtements.
-
-### **Objectifs spécifiques**
-
-- Ajouter, modifier, consulter et supprimer des vêtements, catégories et tags (CRUD)
-- Classer les vêtements par catégorie, couleur, saison et tags
-- Créer et gérer des tenues ou looks personnalisés
-- Rechercher des vêtements ou tenues selon plusieurs critères
-- Fournir une interface fluide, simple, épurée et ergonomique
-- Mettre en place des fonctionnalités avancées : alertes, profils multiples, suggestions de tenues en fonction de ce qu’on porte souvent…
+1. Présentation du projet
+2. Objectifs
+3. Public cible
+4. Personas
+5. Tâches utilisateurs
+6. Fonctionnalités
+7. Scénarios d’utilisation
+8. Contraintes du projet
+9. Critères de réussite
+10. Évolutions futures
 
 ---
 
-## **🔒 Périmètre du projet**
+## 1. Présentation du projet
 
-### **Inclus dans le projet**
+**My Closet** est une application web de gestion de garde-robe personnelle ou familiale. Elle permet à chaque utilisateur de centraliser l'ensemble de ses vêtements dans une interface claire, d'organiser ses tenues à l'avance et de retrouver rapidement un article sans effort.
 
-- Gestion des utilisateurs et authentification
-- Gestion des vêtements, catégories et tags
-- Création et gestion des looks
-- Recherche et filtrage dynamique
-- Interface responsive
-- Profils multiples / partagés
-- Alertes pour tri et rangement
-- Suggestions automatiques de tenues (basées sur occasion, météo ou historique)
-- Intégration météo
-- Mode “lookbook” et favoris
-- Statistiques d’utilisation des vêtements
-- Lien vers des sites de seconde main / marketplaces
+Le constat de départ est simple : beaucoup de personnes possèdent plus de vêtements qu'elles ne s'en souviennent. Certains articles disparaissent au fond d'une armoire, des achats inutiles s'accumulent, et chaque matin devient une perte de temps. Ce problème touche aussi bien une étudiante pressée qu'un parent qui gère plusieurs garde-robes en même temps.
 
-### **Exclus du projet**
-
-- Achat de vêtements en ligne directement depuis l’application
-- Intelligence artificielle avancée pour la création automatique de tenues
+My Closet répond à ce besoin concret en offrant un outil accessible depuis n'importe quel appareil, conçu pour une utilisation rapide au quotidien — sans courbe d'apprentissage.
 
 ---
 
-## **👥 Acteurs du système**
+## 2. Objectifs
 
-- **Utilisateur** : doit se connecter pour gérer sa garde-robe.
-- **Profil secondaire** : par exemple, un parent peut consulter le dressing de ses enfants.
-- Chaque utilisateur possède ses propres tags, catégories et tenues.
+### Objectif principal
 
----
+Permettre à tout utilisateur de gérer sa garde-robe de façon simple, rapide et visuelle, que ce soit pour lui-même ou pour toute sa famille.
 
-## **🛠️ Fonctionnalités détaillées (CRUD et avancées)**
+### Objectifs secondaires
 
-### **Authentification**
-
-- Inscription, connexion et déconnexion
-- Gestion du profil utilisateur
-- Gestion des profils multiples / partagés
-
-### **Gestion des vêtements**
-
-- Ajouter un vêtement : nom, catégorie, couleur, saison, occasion, tags, photo
-- Modifier un vêtement
-- Supprimer un vêtement
-- Consulter la liste des vêtements
-- Lien direct vers des sites de seconde main (Vinted, Le Bon Coin…) si un vêtement n’a pas été utilisé depuis longtemps
-- Tags dynamiques et auto-suggestion
-
-### **Gestion des catégories et tags**
-
-- Ajouter, modifier, supprimer une catégorie ou un tag
-- Associer une catégorie ou plusieurs tags à un vêtement
-
-### **Gestion des looks / tenues**
-
-- Créer un look à partir de plusieurs vêtements
-- Nommer et décrire un look
-- Modifier / supprimer un look
-- Consulter la liste des looks
-- Mode “lookbook” pour naviguer par photo
-- Favoris
-
-### **Recherche et filtrage avancé**
-
-- Filtrer par catégorie, couleur, saison, occasion, tags
-- Résultats dynamiques avec Livewire
-
-### **Suggestions et alertes**
-
-- Suggestions de tenues basées sur : météo, occasion, historique d’utilisation
-- Notifications pour vêtements non utilisés depuis longtemps
-- Alertes de tri si l’utilisateur possède plus de 200 vêtements
-- Statistiques d’utilisation (vêtements les plus ou moins portés)
+- Réduire le temps passé à choisir une tenue le matin
+- Faciliter le tri des vêtements inutilisés ou trop petits
+- Permettre la gestion de plusieurs garde-robes (enfants, conjoint·e, etc.)
+- Éviter les achats redondants grâce à une meilleure visibilité du stock
+- Préparer ses tenues à l'avance pour gagner du temps
+- Offrir une expérience utilisable sans intérêt particulier pour la mode
 
 ---
 
-## **👤 Personas et parcours utilisateurs**
+## 3. Public cible
 
-**Jackie – Étudiante**
+My Closet s'adresse à des profils très variés, unis par un besoin commun : mieux s'organiser sans complexité.
 
-- Veut préparer sa tenue rapidement chaque matin
-- Parcours : se connecte → consulte ses vêtements → filtre par occasion et couleur → crée un look → sauvegarde comme favori
-
-**Clotaire – Jeune actif**
-
-- Possède beaucoup de vêtements et oublie ce qu’il a
-- Parcours : ajoute un nouveau vêtement → tague “sport” → voit qu’il a beaucoup de vêtement de se tague la → fait un tri en mettant ses vêtements sur Vinted via le lien disponible
-
-**Lou – Passionnée de mode**
-
-- Veut organiser ses tenues par style et créer des looks personnalisés
-- Parcours : navigue dans son lookbook → sélectionne des vêtements → compose un look → sauvegarde et ajoute un tag “soirée chic” → consulte les alertes pour optimiser son dressing
-
-**Marie – Maman**
-
-- Veut gérer le dressing de ses enfants
-- Parcours : crée un profil enfant → consulte la garde-robe → filtre par taille et saison → propose des tenues → reçoit alertes pour tri
+- Étudiantes et jeunes actifs pressés le matin
+- Personnes peu intéressées par la mode mais soucieuses de leur organisation
+- Parents gérant les vêtements de plusieurs enfants
+- Personnes cherchant à faire du tri régulièrement
+- Utilisateurs souhaitant une solution légère, sans inscription lourde ni apprentissage
 
 ---
 
-## **🎞️ Cas d’utilisation / scénarios**
+## 4. Personas
 
-1. **Ajouter un vêtement** : formulaire + photo + lien vers marketplaces si inactif
-2. **Ajouter un tag / catégorie** : formulaire ou déjà existant
-3. **Créer un look** : choix de plusieurs vêtements, nom, description, sauvegarde, ajout au favori
-4. **Recherche multi-critères** : combinaison de catégorie, couleur, saison, occasion, tags
-5. **Suggestions de tenue** : basé sur météo ou historique d’utilisation
-6. **Alertes et tri** : notification si dressing > 200 vêtements ou vêtement inactif
-7. **Consulter statistiques** : voir vêtements les plus ou moins portés
+### Persona 1 – Ambre, 19 ans · Étudiante
+
+Ambre est étudiante et ses matinées sont courtes. Elle possède beaucoup de vêtements mais son espace de rangement est limité. Elle oublie ce qu'elle a, rachète parfois des pièces en double et se retrouve régulièrement avec des vêtements qu'elle ne porte plus mais qui prennent de la place.
+
+**Ce qu'elle cherche à accomplir :**
+
+- Savoir rapidement ce qu'elle possède sans ouvrir toutes ses armoires
+- Identifier les vêtements qu'elle ne porte plus pour faire du tri facilement
+- Préparer sa tenue la veille pour ne pas perdre de temps le matin
+- Avoir une interface rapide à consulter depuis son téléphone
+
+**Ce qui la freinerait :**
+
+- Un formulaire trop long pour ajouter un vêtement
+- Une interface qui demande trop d'informations obligatoires
+- Une application lente ou peu adaptée au mobile
 
 ---
 
-## **🔔 Notifications**
+### Persona 2 – Lorian, 24 ans · Jeune actif, peu intéressé par la mode
 
-- Quand un vêtement est ajouté, supprimé ou inactif depuis longtemps
-- Quand un look est créé ou modifié
-- Alertes de tri et suggestions de tenues
+Lorian ne se considère pas comme quelqu'un de fashion. Il s'habille fonctionnellement et n'a aucune envie de passer du temps à réfléchir à ses tenues. Pourtant, il perd du temps chaque matin à chercher ce qui est propre, disponible et acceptable à porter.
+
+**Ce qu'il cherche à accomplir :**
+
+- Savoir en un coup d'œil ce qu'il peut mettre ce matin
+- Connaître le statut de ses vêtements (propre, sale, au lavage)
+- Ne pas avoir à réfléchir : juste voir, choisir, partir
+- Utiliser l'appli sans avoir à configurer quoi que ce soit de complexe
+
+**Ce qui le freinerait :**
+
+- Trop d'options, de catégories, de champs à remplir
+- Une interface trop "mode" ou trop visuelle qui ne correspond pas à son usage
+- Devoir ajouter des photos pour que l'app soit utile
 
 ---
 
-## **⚙️ Contraintes techniques**
+### Persona 3 – Marie, 38 ans · Mère de famille, 2 enfants
 
-| **Élément** | **Technologie** |
+Marie gère sa propre garde-robe et celle de ses deux enfants. Le matin, préparer tout le monde en même temps est un défi logistique. Elle cherche à avoir une vue d'ensemble de ce qui est disponible, propre et adapté à la saison pour chaque membre de la famille.
+
+**Ce qu'elle cherche à accomplir :**
+
+- Gérer plusieurs garde-robes depuis un seul compte (la sienne + celle de chaque enfant)
+- Savoir quels vêtements sont propres, sales ou à laver pour chaque personne
+- Identifier les vêtements devenus trop petits pour les enfants
+- Préparer les tenues des enfants la veille pour fluidifier la matinée
+
+**Ce qui la freinerait :**
+
+- Ne pas pouvoir séparer clairement les garde-robes par personne
+- Devoir se reconnecter ou changer de compte pour accéder aux vêtements de ses enfants
+- Une navigation peu claire qui rend difficile de savoir "dans quelle garde-robe on est"
+
+---
+
+## 5. Tâches utilisateurs
+
+Voici les tâches concrètes que les utilisateurs cherchent à accomplir avec My Closet, indépendamment des fonctionnalités techniques :
+
+| Priorité | Tâche |
 | --- | --- |
-| Backend | Laravel  |
-| Frontend dynamique | Livewire  |
-| UI | Tailwind CSS |
-| Base de données | MySQL |
-| Authentification | Laravel (Fortify) |
-| Stockage | AWS S3 (pour photos) |
-| Serveur / Hébergement | Laravel Cloud ou autre |
+| Haute | Ajouter un vêtement rapidement, sans remplir un long formulaire |
+| Haute | Voir d'un coup d'œil tous les vêtements disponibles |
+| Haute | Connaître le statut d'un vêtement (propre, sale, à laver…) |
+| Haute | Préparer une tenue en associant plusieurs vêtements |
+| Haute | Passer d'une garde-robe à une autre (ex. : la mienne / celle de mon enfant) |
+| Moyenne | Filtrer ses vêtements par catégorie, couleur ou statut |
+| Moyenne | Identifier les vêtements peu ou jamais portés pour faire du tri |
+| Moyenne | Rechercher un vêtement précis par son nom |
+| Basse | Modifier ou supprimer un vêtement existant |
+| Basse | Créer, renommer ou supprimer une garde-robe |
 
 ---
 
-## **⚠️ Contraintes non fonctionnelles**
+## 6. Fonctionnalités
 
-- Sécurité et confidentialité des données utilisateurs
-- Performance acceptable pour recherche et filtrage
-- Interface simple, ergonomique et responsive
+Toutes les fonctionnalités décrites ci-dessous sont **développées et disponibles** dans la version actuelle de l'application.
 
 ---
 
+### 6.1 Gestion du compte utilisateur
 
-## **🌐 Site public**
+L'utilisateur dispose d'un espace personnel sécurisé.
 
-- Page d’accueil (connexion / présentation)
-- Page d’aide (explications pour ajouter un vêtement ou créer un look)
+- Inscription avec nom, email et mot de passe
+- Connexion et déconnexion
+- Page de paramètre consultable et modifiable
+
+L'authentification est gérée via le système natif de Laravel avec sessions sécurisées.
+
+---
+
+### 6.2 Gestion des garde-robes
+
+Un utilisateur peut créer plusieurs garde-robes indépendantes au sein du même compte.
+
+- Créer une nouvelle garde-robe (nom libre)
+- Renommer une garde-robe existante
+- Supprimer une garde-robe (et tous ses vêtements)
+- Naviguer facilement d'une garde-robe à l'autre
+
+Cela permet par exemple à un parent de gérer sa propre garde-robe et celle de chacun de ses enfants depuis un compte unique.
 
 ---
 
-## **✅ Résultats attendus**
+### 6.3 Gestion des vêtements
 
-- Application CRUD fonctionnelle et ergonomique
-- Gestion multi-profil et alertes intelligentes
-- Suggestions de tenues basées sur la météo
-- Statistiques et lookbook
-- Base de données bien structurée
-- Interface moderne et responsive
-- Projet conforme aux exigences d’un PFE
+Chaque vêtement est une fiche individuelle rattachée à une garde-robe.
+
+Champs disponibles :
+
+| Champ | Obligatoire |
+| --- | --- |
+| Nom | Oui |
+| Catégorie | Non |
+| Couleur | Non |
+| Marque | Non |
+| Statut | Non |
+| Photo | Non |
+- Ajouter un vêtement depuis un formulaire rapide
+- Modifier les informations d'un vêtement
+- Supprimer un vêtement
+- Associer une photo
+
+Le nom est le seul champ obligatoire pour permettre un ajout rapide, sans friction.
 
 ---
+
+### 6.4 Gestion des statuts
+
+Chaque vêtement peut se voir attribuer un statut pour refléter son état actuel.
+
+Statuts possibles :
+
+- Propre
+- Sale
+- À laver
+- Repassé
+- Peu porté
+- Trop petit
+
+Le statut est modifiable à tout moment directement depuis la fiche de modification.
+
+---
+
+### 6.5 Recherche et filtres
+
+L'utilisateur peut retrouver rapidement un article parmi tous ses vêtements.
+
+- Recherche par nom (saisie libre)
+- Filtre par catégorie
+- Filtre par statut
+
+Les filtres sont cumulables et s'appliquent en temps réel grâce à Livewire, sans rechargement de page.
+
+---
+
+### 6.6 Création de tenues
+
+L'utilisateur peut assembler plusieurs vêtements pour former une tenue enregistrée.
+
+- Créer une tenue en sélectionnant plusieurs vêtements
+- Nommer la tenue
+- Modifier une tenue existante
+- Supprimer une tenue
+
+Les tenues sont associées à une garde-robe et peuvent être consultées indépendamment des vêtements.
+
+---
+
+### 6.7 Responsive design
+
+L'application est utilisable sur tous les supports.
+
+- Interface adaptée mobile, tablette et desktop
+- Navigation tactile optimisée sur smartphone
+
+---
+
+## 7. Scénarios d'utilisation
+
+### Scénario 1 – Ambre prépare sa tenue la veille
+
+Il est 22h. Ambre veut préparer sa tenue pour le lendemain matin depuis son téléphone. Elle ouvre My Closet, accède à sa garde-robe et filtre par statut "Propre". Elle visualise les vêtements disponibles, sélectionne un jean et un pull, crée une tenue qu'elle nomme "Demain matin" et la sauvegarde. Le lendemain, elle n'a qu'à consulter sa tenue enregistrée.
+
+---
+
+### Scénario 2 – Ambre fait du tri
+
+Ambre manque de place. Elle ouvre l'application et filtre ses vêtements par statut "Peu porté". Elle identifie en quelques secondes une dizaine de pièces qu'elle n'a pas mises depuis longtemps. Elle peut alors décider de les donner ou les vendre, et les supprime de sa garde-robe.
+
+---
+
+### Scénario 3 – Lorian vérifie ce qu'il peut mettre
+
+Lorian se lève et veut s'habiller vite. Il ouvre My Closet, filtre ses vêtements par statut "Propre" et voit immédiatement ce qui est disponible. Il choisit ce qu'il va mettre, ferme l'app et part. Il n'a pas eu à chercher physiquement dans son armoire ni à réfléchir.
+
+---
+
+### Scénario 4 – Lorian met à jour un statut après la lessive
+
+Lorian vient de faire sa lessive. Il ouvre My Closet et passe le statut de plusieurs vêtements de "Sale" à "Propre" directement depuis la modification de la fiche. L'opération lui prend moins d'une minute.
+
+---
+
+### Scénario 5 – Marie prépare les enfants le soir
+
+Marie veut préparer les affaires de ses deux enfants pour demain. Elle se connecte à My Closet, navigue vers la garde-robe de son fils, filtre par "Propre" et prépare une tenue. Elle fait de même pour sa fille. Elle revient ensuite sur sa propre garde-robe pour choisir sa tenue du lendemain. Tout se fait depuis la même session, sans changer de compte.
+
+---
+
+### Scénario 6 – Marie identifie les vêtements trop petits
+
+Marie remarque que son fils a grandi. Elle ouvre sa garde-robe et filtre par statut "Trop petit". Elle retrouve toutes les pièces concernées, les trie et les supprime de l'application une fois données ou rangées. Sa garde-robe reste à jour.
+
+---
+
+### Scénario 7 – Nouvel utilisateur, premier ajout
+
+Un nouvel utilisateur crée son compte et veut ajouter son premier vêtement. Il clique sur "Ajouter un vêtement", entre uniquement le nom ("Veste noire") et valide. Le vêtement apparaît immédiatement dans sa garde-robe. Il peut ensuite enrichir la fiche en ajoutant une photo, une catégorie ou un statut selon ses envies.
+
+---
+
+## 8. Contraintes du projet
+
+### Temps
+
+Le projet a été réalisé dans le cadre du PFE, avec une durée limitée à la période définie par l'établissement. Les choix de développement ont donc privilégié la stabilité et la cohérence d'une version complète plutôt que la multiplication des fonctionnalités.
+
+### Techniques
+
+Les technologies que j’ai utilisé sont celle que je maîtrise le mieux :
+
+| Technologie | Rôle |
+| --- | --- |
+| Laravel | Framework back-end (routes, auth, modèles, contrôleurs) |
+| Livewire | Composants réactifs sans JavaScript custom |
+| Tailwind CSS | Styles utilitaires, responsive design |
+| MySQL | Base de données relationnelle |
+
+### Périmètre
+
+La priorité a été de livrer une application stable, utilisable et cohérente de bout en bout. Les fonctionnalités secondaires (notifications, calendrier, recommandations) ont été volontairement repoussées aux évolutions futures.
+
+---
+
+## 9. Critères de réussite
+
+Le projet est considéré comme réussi si :
+
+- Un nouvel utilisateur comprend l'interface sans explication
+- L'ajout d'un vêtement prend moins de 30 secondes
+- Il est possible de consulter sa garde-robe entièrement depuis un smartphone
+- La recherche et les filtres permettent de retrouver un article en moins de 10 secondes
+- Un utilisateur peut gérer plusieurs garde-robes depuis un seul compte sans confusion
+- La création d'une tenue est intuitive sans documentation
+
+---
+
+## 10. Évolutions futures
+
+### Conception et choix de développement
+
+Toutes les fonctionnalités décrites ont été **entièrement conçues et donc intégrées sur Figma**. Les maquettes couvrent l'ensemble des écrans, interactions et flux utilisateurs associés à chacune d'elles.
+
+Durant le développement, l'objectif a été d'intégrer un maximum de fonctionnalités en code. Cependant, une décision a été prise délibérément : **ne pas intégrer une fonctionnalité à moitié**. Plutôt que de livrer des écrans incomplets ou des parcours cassés, j’ai préférée maintenir une application stable, cohérente et pleinement utilisable de bout en bout. Certaines fonctionnalités ont donc été conservées au niveau Figma uniquement, prêtes à être développées.
+
+Ce projet est **vivant et évolutif**. Il peut être évalué dans son état actuel, mais aussi dans sa capacité à évoluer — les bases techniques posées (Laravel, Livewire, architecture modulaire) permettent d'intégrer ces fonctionnalités. Dans deux ans, l'application peut être différente tout en restant fidèle à sa vision initiale.
+
+---
+
+*Cahier des charges rédigé dans le cadre du Projet de Fin d'Études – My Closet.*
