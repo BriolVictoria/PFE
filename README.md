@@ -39,12 +39,12 @@ Permettre à tout utilisateur de gérer sa garde-robe de façon simple, rapide e
 
 ### Objectifs secondaires
 
-- Réduire le temps passé à choisir une tenue le matin
-- Faciliter le tri des vêtements inutilisés ou trop petits
-- Permettre la gestion de plusieurs garde-robes (enfants, conjoint·e, etc.)
-- Éviter les achats redondants grâce à une meilleure visibilité du stock
-- Préparer ses tenues à l'avance pour gagner du temps
-- Offrir une expérience utilisable sans intérêt particulier pour la mode
+- Réduire le temps passé à choisir une tenue le matin;
+- Faciliter le tri des vêtements inutilisés ou trop petits 
+- Permettre la gestion de plusieurs garde-robes (enfants, conjoint·e, etc.);
+- Éviter les achats redondants grâce à une meilleure visibilité du stock;
+- Préparer ses tenues à l'avance pour gagner du temps;
+- Offrir une expérience utilisable sans intérêt particulier pour la mode.
 
 ---
 
@@ -52,11 +52,11 @@ Permettre à tout utilisateur de gérer sa garde-robe de façon simple, rapide e
 
 My Closet s'adresse à des profils très variés, unis par un besoin commun : mieux s'organiser sans complexité.
 
-- Étudiantes et jeunes actifs pressés le matin
-- Personnes peu intéressées par la mode mais soucieuses de leur organisation
-- Parents gérant les vêtements de plusieurs enfants
-- Personnes cherchant à faire du tri régulièrement
-- Utilisateurs souhaitant une solution légère, sans inscription lourde ni apprentissage
+- Étudiantes et jeunes actifs pressés le matin;
+- Personnes peu intéressées par la mode mais soucieuses de leur organisation;
+- Parents gérant les vêtements de plusieurs enfants;
+- Personnes cherchant à faire du tri régulièrement;
+- Utilisateurs souhaitant une solution légère, sans inscription lourde ni apprentissage.
 
 ---
 
@@ -68,16 +68,16 @@ Ambre est étudiante et ses matinées sont courtes. Elle possède beaucoup de v�
 
 **Ce qu'elle cherche à accomplir :**
 
-- Savoir rapidement ce qu'elle possède sans ouvrir toutes ses armoires
-- Identifier les vêtements qu'elle ne porte plus pour faire du tri facilement
-- Préparer sa tenue la veille pour ne pas perdre de temps le matin
-- Avoir une interface rapide à consulter depuis son téléphone
+- Savoir rapidement ce qu'elle possède sans ouvrir toutes ses armoires;
+- Identifier les vêtements qu'elle ne porte plus pour faire du tri facilement;
+- Préparer sa tenue la veille pour ne pas perdre de temps le matin;
+- Avoir une interface rapide à consulter depuis son téléphone.
 
 **Ce qui la freinerait :**
 
-- Un formulaire trop long pour ajouter un vêtement
-- Une interface qui demande trop d'informations obligatoires
-- Une application lente ou peu adaptée au mobile
+- Un formulaire trop long pour ajouter un vêtement;
+- Une interface qui demande trop d'informations obligatoires;
+- Une application lente ou peu adaptée au mobile.
 
 ---
 
@@ -87,16 +87,16 @@ Lorian ne se considère pas comme quelqu'un de fashion. Il s'habille fonctionnel
 
 **Ce qu'il cherche à accomplir :**
 
-- Savoir en un coup d'œil ce qu'il peut mettre ce matin
-- Connaître le statut de ses vêtements (propre, sale, au lavage)
-- Ne pas avoir à réfléchir : juste voir, choisir, partir
-- Utiliser l'appli sans avoir à configurer quoi que ce soit de complexe
+- Savoir en un coup d'œil ce qu'il peut mettre ce matin;
+- Connaître le statut de ses vêtements (propre, sale, au lavage);
+- Ne pas avoir à réfléchir : juste voir, choisir, partir;
+- Utiliser l'appli sans avoir à configurer quoi que ce soit de complexe.
 
 **Ce qui le freinerait :**
 
-- Trop d'options, de catégories, de champs à remplir
-- Une interface trop "mode" ou trop visuelle qui ne correspond pas à son usage
-- Devoir ajouter des photos pour que l'app soit utile
+- Trop d'options, de catégories, de champs à remplir;
+- Une interface trop "mode" ou trop visuelle qui ne correspond pas à son usage;
+- Devoir ajouter des photos pour que l'app soit utile.
 
 ---
 
@@ -106,16 +106,16 @@ Marie gère sa propre garde-robe et celle de ses deux enfants. Le matin, prépar
 
 **Ce qu'elle cherche à accomplir :**
 
-- Gérer plusieurs garde-robes depuis un seul compte (la sienne + celle de chaque enfant)
-- Savoir quels vêtements sont propres, sales ou à laver pour chaque personne
-- Identifier les vêtements devenus trop petits pour les enfants
-- Préparer les tenues des enfants la veille pour fluidifier la matinée
+- Gérer plusieurs garde-robes depuis un seul compte (la sienne + celle de chaque enfant);
+- Savoir quels vêtements sont propres, sales ou à laver pour chaque personne;
+- Identifier les vêtements devenus trop petits pour les enfants;
+- Préparer les tenues des enfants la veille pour fluidifier la matinée.
 
 **Ce qui la freinerait :**
 
-- Ne pas pouvoir séparer clairement les garde-robes par personne
-- Devoir se reconnecter ou changer de compte pour accéder aux vêtements de ses enfants
-- Une navigation peu claire qui rend difficile de savoir "dans quelle garde-robe on est"
+- Ne pas pouvoir séparer clairement les garde-robes par personne;
+- Devoir se reconnecter ou changer de compte pour accéder aux vêtements de ses enfants;
+- Une navigation peu claire qui rend difficile de savoir "dans quelle garde-robe on se trouve".
 
 ---
 
@@ -123,18 +123,18 @@ Marie gère sa propre garde-robe et celle de ses deux enfants. Le matin, prépar
 
 Voici les tâches concrètes que les utilisateurs cherchent à accomplir avec My Closet, indépendamment des fonctionnalités techniques :
 
-| Priorité | Tâche |
-| --- | --- |
-| Haute | Ajouter un vêtement rapidement, sans remplir un long formulaire |
-| Haute | Voir d'un coup d'œil tous les vêtements disponibles |
-| Haute | Connaître le statut d'un vêtement (propre, sale, à laver…) |
-| Haute | Préparer une tenue en associant plusieurs vêtements |
-| Haute | Passer d'une garde-robe à une autre (ex. : la mienne / celle de mon enfant) |
-| Moyenne | Filtrer ses vêtements par catégorie, couleur ou statut |
-| Moyenne | Identifier les vêtements peu ou jamais portés pour faire du tri |
-| Moyenne | Rechercher un vêtement précis par son nom |
-| Basse | Modifier ou supprimer un vêtement existant |
-| Basse | Créer, renommer ou supprimer une garde-robe |
+| Priorité | Tâche                                                                        |
+| --- |------------------------------------------------------------------------------|
+| Haute | Ajouter un vêtement rapidement, sans remplir un long formulaire.             |
+| Haute | Voir d'un seul coup d'œil tous les vêtements disponibles.                    |
+| Haute | Connaître le statut d'un vêtement (propre, sale, à laver…).                  |
+| Haute | Préparer une tenue en associant plusieurs vêtements.                         |
+| Haute | Passer d'une garde-robe à une autre (ex. : la mienne / celle de mon enfant). |
+| Moyenne | Filtrer ses vêtements par catégorie, couleur ou statut.                      |
+| Moyenne | Identifier les vêtements peu ou jamais portés pour faire du tri.             |
+| Moyenne | Rechercher un vêtement précis par son nom.                                   |
+| Basse | Modifier ou supprimer un vêtement existant.                                  |
+| Basse | Créer, renommer ou supprimer une garde-robe.                                 |
 
 ---
 
@@ -148,9 +148,9 @@ Toutes les fonctionnalités décrites ci-dessous sont **développées et disponi
 
 L'utilisateur dispose d'un espace personnel sécurisé.
 
-- Inscription avec nom, email et mot de passe
-- Connexion et déconnexion
-- Page de paramètre consultable et modifiable
+- Inscription avec nom, email et mot de passe;
+- Connexion et déconnexion;
+- Page de paramètres consultable et modifiable.
 
 L'authentification est gérée via le système natif de Laravel avec sessions sécurisées.
 
@@ -160,10 +160,10 @@ L'authentification est gérée via le système natif de Laravel avec sessions s�
 
 Un utilisateur peut créer plusieurs garde-robes indépendantes au sein du même compte.
 
-- Créer une nouvelle garde-robe (nom libre)
-- Renommer une garde-robe existante
-- Supprimer une garde-robe (et tous ses vêtements)
-- Naviguer facilement d'une garde-robe à l'autre
+- Créer une nouvelle garde-robe (nom libre);
+- Renommer une garde-robe existante;
+- Supprimer une garde-robe (et tous ses vêtements);
+- Naviguer facilement d'une garde-robe à l'autre.
 
 Cela permet par exemple à un parent de gérer sa propre garde-robe et celle de chacun de ses enfants depuis un compte unique.
 
@@ -171,7 +171,7 @@ Cela permet par exemple à un parent de gérer sa propre garde-robe et celle de 
 
 ### 6.3 Gestion des vêtements
 
-Chaque vêtement est une fiche individuelle rattachée à une garde-robe.
+Chaque vêtement a une fiche individuelle rattachée à une garde-robe.
 
 Champs disponibles :
 
@@ -183,10 +183,10 @@ Champs disponibles :
 | Marque | Non |
 | Statut | Non |
 | Photo | Non |
-- Ajouter un vêtement depuis un formulaire rapide
-- Modifier les informations d'un vêtement
-- Supprimer un vêtement
-- Associer une photo
+- Ajouter un vêtement depuis un formulaire rapide;
+- Modifier les informations d'un vêtement;
+- Supprimer un vêtement;
+- Associer une photo.
 
 Le nom est le seul champ obligatoire pour permettre un ajout rapide, sans friction.
 
@@ -196,14 +196,14 @@ Le nom est le seul champ obligatoire pour permettre un ajout rapide, sans fricti
 
 Chaque vêtement peut se voir attribuer un statut pour refléter son état actuel.
 
-Statuts possibles :
+Exemples de statuts que l'utilisateur pourra ajouter dans l'application :
 
-- Propre
-- Sale
-- À laver
-- Repassé
-- Peu porté
-- Trop petit
+- Propre;
+- Sale;
+- À laver;
+- Repassé;
+- Peu porté;
+- Trop petit/grand.
 
 Le statut est modifiable à tout moment directement depuis la fiche de modification.
 
@@ -213,9 +213,9 @@ Le statut est modifiable à tout moment directement depuis la fiche de modificat
 
 L'utilisateur peut retrouver rapidement un article parmi tous ses vêtements.
 
-- Recherche par nom (saisie libre)
-- Filtre par catégorie
-- Filtre par statut
+- Recherche par nom (saisie libre);
+- Filtre par catégorie;
+- Filtre par statut.
 
 Les filtres sont cumulables et s'appliquent en temps réel grâce à Livewire, sans rechargement de page.
 
@@ -225,10 +225,10 @@ Les filtres sont cumulables et s'appliquent en temps réel grâce à Livewire, s
 
 L'utilisateur peut assembler plusieurs vêtements pour former une tenue enregistrée.
 
-- Créer une tenue en sélectionnant plusieurs vêtements
-- Nommer la tenue
-- Modifier une tenue existante
-- Supprimer une tenue
+- Créer une tenue en sélectionnant plusieurs vêtements;
+- Nommer la tenue;
+- Modifier une tenue existante;
+- Supprimer une tenue.
 
 Les tenues sont associées à une garde-robe et peuvent être consultées indépendamment des vêtements.
 
@@ -238,8 +238,8 @@ Les tenues sont associées à une garde-robe et peuvent être consultées indép
 
 L'application est utilisable sur tous les supports.
 
-- Interface adaptée mobile, tablette et desktop
-- Navigation tactile optimisée sur smartphone
+- Interface adaptée mobile, tablette et desktop;
+- Navigation tactile optimisée sur smartphone.
 
 ---
 
@@ -271,7 +271,7 @@ Lorian vient de faire sa lessive. Il ouvre My Closet et passe le statut de plusi
 
 ### Scénario 5 – Marie prépare les enfants le soir
 
-Marie veut préparer les affaires de ses deux enfants pour demain. Elle se connecte à My Closet, navigue vers la garde-robe de son fils, filtre par "Propre" et prépare une tenue. Elle fait de même pour sa fille. Elle revient ensuite sur sa propre garde-robe pour choisir sa tenue du lendemain. Tout se fait depuis la même session, sans changer de compte.
+Marie veut préparer les affaires de ses deux enfants pour le lendemain. Elle se connecte à My Closet, navigue vers la garde-robe de son fils, filtre par "Propre" et prépare une tenue. Elle fait de même pour sa fille. Elle revient ensuite sur sa propre garde-robe pour choisir sa tenue du lendemain. Tout se fait depuis la même session, sans changer de compte.
 
 ---
 
@@ -295,14 +295,14 @@ Le projet a été réalisé dans le cadre du PFE, avec une durée limitée à la
 
 ### Techniques
 
-Les technologies que j’ai utilisé sont celle que je maîtrise le mieux :
+Les technologies utilisées sont celles que je maîtrise le mieux, à savoir :
 
-| Technologie | Rôle |
-| --- | --- |
-| Laravel | Framework back-end (routes, auth, modèles, contrôleurs) |
-| Livewire | Composants réactifs sans JavaScript custom |
-| Tailwind CSS | Styles utilitaires, responsive design |
-| MySQL | Base de données relationnelle |
+| Technologie | Rôle                                                     |
+| --- |----------------------------------------------------------|
+| Laravel | Framework back-end (routes, auth, modèles, contrôleurs); |
+| Livewire | Composants réactifs sans JavaScript custom ;             |
+| Tailwind CSS | Styles utilitaires, responsive design;                   |
+| MySQL | Base de données relationnelle.                           |
 
 ### Périmètre
 
@@ -314,12 +314,12 @@ La priorité a été de livrer une application stable, utilisable et cohérente 
 
 Le projet est considéré comme réussi si :
 
-- Un nouvel utilisateur comprend l'interface sans explication
-- L'ajout d'un vêtement prend moins de 30 secondes
-- Il est possible de consulter sa garde-robe entièrement depuis un smartphone
-- La recherche et les filtres permettent de retrouver un article en moins de 10 secondes
-- Un utilisateur peut gérer plusieurs garde-robes depuis un seul compte sans confusion
-- La création d'une tenue est intuitive sans documentation
+- Un nouvel utilisateur comprend l'interface sans explication;
+- L'ajout d'un vêtement prend moins de 30 secondes;
+- Il est possible de consulter sa garde-robe entièrement depuis un smartphone;
+- La recherche et les filtres permettent de retrouver un article en moins de 10 secondes;
+- Un utilisateur peut gérer plusieurs garde-robes depuis un seul compte sans confusion;
+- La création d'une tenue est intuitive sans documentation.
 
 ---
 
@@ -329,9 +329,9 @@ Le projet est considéré comme réussi si :
 
 Toutes les fonctionnalités décrites ont été **entièrement conçues et donc intégrées sur Figma**. Les maquettes couvrent l'ensemble des écrans, interactions et flux utilisateurs associés à chacune d'elles.
 
-Durant le développement, l'objectif a été d'intégrer un maximum de fonctionnalités en code. Cependant, une décision a été prise délibérément : **ne pas intégrer une fonctionnalité à moitié**. Plutôt que de livrer des écrans incomplets ou des parcours cassés, j’ai préférée maintenir une application stable, cohérente et pleinement utilisable de bout en bout. Certaines fonctionnalités ont donc été conservées au niveau Figma uniquement, prêtes à être développées.
+Durant le développement, l'objectif a été d'intégrer un maximum de fonctionnalités en code. Cependant, une décision a été prise délibérément : **ne pas intégrer une fonctionnalité à moitié**. Plutôt que de livrer des écrans incomplets ou des parcours cassés, j’ai préféré maintenir une application stable, cohérente et pleinement utilisable de bout en bout. Certaines fonctionnalités ont donc été conservées au niveau Figma uniquement, prêtes à être développées.
 
-Ce projet est **vivant et évolutif**. Il peut être évalué dans son état actuel, mais aussi dans sa capacité à évoluer — les bases techniques posées (Laravel, Livewire, architecture modulaire) permettent d'intégrer ces fonctionnalités. Dans deux ans, l'application peut être différente tout en restant fidèle à sa vision initiale.
+Ce projet est **vivant et évolutif**. Il peut être évalué dans son état actuel, mais aussi dans sa capacité à évoluer — les bases techniques posées (Laravel, Livewire, architecture modulaire) permettent d'intégrer ces fonctionnalités. Dans deux ans, l'application pourrai-t être différente tout en restant fidèle à sa vision initiale.
 
 ---
 
